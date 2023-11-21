@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8025aca6-d793-4661-a611-4b9e6a597120">
+  <producedTypes>
+    <containerType typeId="4e4168e5-ad57-4c95-b575-13b15530a316" valueTypeId="4253fdd3-ce6e-44cc-ad7f-e2267089603c"/>
+  </producedTypes>
+  <name>ТНБ_Валюта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Валюта</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>5</scale>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

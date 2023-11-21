@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="545fc67f-0063-4bee-b82c-9c1009b48778">
+  <producedTypes>
+    <selectionType typeId="1ca3baba-3705-402d-b4df-e2d1b5883b72" valueTypeId="29b54cb3-5d5e-4019-a51a-0886f54bf658"/>
+    <listType typeId="f43f57b3-17c0-4d72-b39c-8c14639291df" valueTypeId="35bdf4ba-9546-431c-a978-60dcd6bf1116"/>
+    <managerType typeId="1a5c2bac-8e20-44fd-8dd6-e145ed22768c" valueTypeId="d98c06d4-d24e-44d4-aa76-5f7a6e5b2639"/>
+    <recordSetType typeId="304818d3-0a7c-4a41-aab1-01882f0eab82" valueTypeId="4f0f7878-ee7f-4234-bed8-6eae00549ef2"/>
+    <recordKeyType typeId="1e4cafd7-e786-4712-a36e-0b0a7cbc0466" valueTypeId="ef1afe74-fd3d-4dd6-871f-49e5ad20a863"/>
+    <recordType typeId="baba297e-f337-49ba-971a-b7419222ea21" valueTypeId="7800ec97-617b-4656-bedc-356a85738bb2"/>
+  </producedTypes>
+  <name>ТНБ_СебестоимостьВалюты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Себестоимость валюты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="1e8a9359-a264-45e6-bd8a-289f97379b85">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ТНБ_Валюта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="2f2ce4c0-97a2-41cf-b3b8-56b611edc472">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="85540f8a-0aa5-46e2-8c55-6ce5ed371825">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5a24e577-f39e-453e-8544-bf084a3fd667">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТНБ_МестаХранения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

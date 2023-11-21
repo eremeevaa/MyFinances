@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="384e3486-472f-46b9-8ca4-eafd8574c13e">
+  <name>ТорговляНаБиржах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Торговля на биржах</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <managedApplicationModule>Extended</managedApplicationModule>
+    <sessionModule>Extended</sessionModule>
+    <externalConnectionModule>Extended</externalConnectionModule>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <defaultRoles>Extended</defaultRoles>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="7d8e7531-a6f6-42f5-a96e-61546fde4fb3"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="90de9d1f-8dde-49ff-aaa7-62f02e84d6a8"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="ccffc77d-814d-48d2-af60-cadd69c83756"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="a5db8f10-62c3-498f-872e-ec42d67fe6a4"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="bab6da44-61d6-486e-b7d9-7c25514f256f"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="af729fb6-4348-43ea-86aa-7385284355fb"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="e20b4a79-203b-4333-b0f6-d6038aa3aea9"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>ТНБ_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.21</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+  <languages uuid="8ec88528-e5c3-4530-bf8f-8234fb31c2e5" extendedConfigurationObject="79292a23-3960-4d1e-8f9d-4cc457c1d1c3">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.ТНБ_ТорговляНаБиржах</subsystems>
+  <roles>Role.ТНБ_ПолныеПрава</roles>
+  <commonModules>CommonModule.ТорговляНаБиржеКлиент</commonModules>
+  <definedTypes>DefinedType.ТНБ_Валюта</definedTypes>
+  <definedTypes>DefinedType.ТНБ_ПорядокДвиженияРегистра</definedTypes>
+  <constants>Constant.ТНБ_ОсновнаяВалюта</constants>
+  <catalogs>Catalog.ТНБ_МестаХранения</catalogs>
+  <catalogs>Catalog.Валюты</catalogs>
+  <documents>Document.ТНБ_ДвиженияВалюты</documents>
+  <documents>Document.ТНБ_ТорговаяОперация</documents>
+  <enums>Enum.ТНБ_ВидыОперации</enums>
+  <enums>Enum.ТНБ_ВидыОперацийДвиженийВалют</enums>
+  <enums>Enum.ТНБ_СтатусыДвиженийВалюты</enums>
+  <enums>Enum.ТНБ_СтатусыТорговыхОпераций</enums>
+  <accumulationRegisters>AccumulationRegister.ТНБ_Остатки</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ТНБ_СебестоимостьВалюты</accumulationRegisters>
+</mdclass:Configuration>

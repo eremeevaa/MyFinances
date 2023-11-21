@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e84fd01-cb20-47bc-8905-c21d1530126b">
+  <producedTypes>
+    <containerType typeId="17eaa0dc-10ed-4cad-a906-fb5895140a3e" valueTypeId="21bf7bcc-8410-47ff-b88e-a2ae14273fa8"/>
+  </producedTypes>
+  <name>ТНБ_ПорядокДвиженияРегистра</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порядок движения регистра</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>14</precision>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

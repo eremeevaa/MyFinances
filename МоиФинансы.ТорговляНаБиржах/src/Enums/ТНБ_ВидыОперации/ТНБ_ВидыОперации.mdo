@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a84bd59-d3f8-4270-9825-8485242180c4">
+  <producedTypes>
+    <refType typeId="e36cc3cf-4764-4402-a20e-efa4a6a3bd88" valueTypeId="8c484e0d-09ef-47ce-86f7-fb938ce9665b"/>
+    <listType typeId="0ce65f8a-0233-428b-af50-436f16a0b760" valueTypeId="8affd4c6-d51c-4e0c-b74f-4a0c294d9fa2"/>
+    <managerType typeId="81ef10e7-0167-49f3-8fbf-d4983c48d022" valueTypeId="446b9f10-a135-488d-900a-92bb023803f7"/>
+  </producedTypes>
+  <name>ТНБ_ВидыОперации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операции</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="87b83f6f-c3fe-419a-8224-aa96c42003ba">
+    <name>Торговля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Торговля</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e43ad119-56f9-4b57-99c0-387e0b8287b3">
+    <name>Перемещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

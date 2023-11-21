@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c13ac39a-8ba9-44c2-90e7-675fd4ee1742">
+  <producedTypes>
+    <selectionType typeId="77b03b16-3b40-4a73-9c3a-5bad9c91d2ca" valueTypeId="7fc5bc83-635e-4808-a642-b5ecae1ecaf7"/>
+    <listType typeId="895257de-b4f1-424f-a790-5d9bc51938a1" valueTypeId="e4caed93-913e-46a0-8c75-0558092dc16e"/>
+    <managerType typeId="5352c392-f85b-4df1-8bf1-75df48d5d72c" valueTypeId="823afbb7-1361-4834-aab4-77de9e7fae3a"/>
+    <recordSetType typeId="2e2973f8-3fd9-4b1e-8a86-1fe55ccad28c" valueTypeId="062b0679-6c05-4766-a4cf-f20e06643ca0"/>
+    <recordKeyType typeId="16ba0b57-b885-4cf3-9dea-69f22814ca2e" valueTypeId="959040de-5642-45bb-84c9-88c0eafe188b"/>
+    <recordType typeId="f4a13586-8783-4139-bcaf-db1691121692" valueTypeId="9c002b67-48a8-4d7f-a358-e1f50d4db0a8"/>
+  </producedTypes>
+  <name>ТНБ_Остатки</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТНБ остатки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="62168d92-359f-4aac-a1ec-0da3b3dd469e">
+    <name>ВНаличии</name>
+    <synonym>
+      <key>ru</key>
+      <value>В наличии</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ТНБ_Валюта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="24ea8f3c-4a51-4b5b-902f-9c64adcf92e7">
+    <name>ПланРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>План расход</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ТНБ_Валюта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="3bd59ec0-a8bc-4dc2-89f6-88b42c75bdf4">
+    <name>ПланПриход</name>
+    <synonym>
+      <key>ru</key>
+      <value>План приход</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ТНБ_Валюта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="c3a57582-1211-4e36-9d6a-ca3ecc7e1633">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8afd8e47-4f7b-4f5d-8f60-35c38ef15148">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТНБ_МестаХранения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

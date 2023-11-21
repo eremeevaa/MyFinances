@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64b8623f-37df-4a9d-9dcc-c155dd983a5e">
+  <name>ТНБ_ТорговляНаБиржах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Торговля на биржах</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.Char</picture>
+  </picture>
+  <content>Catalog.ТНБ_МестаХранения</content>
+  <content>Document.ТНБ_ТорговаяОперация</content>
+  <content>Enum.ТНБ_ВидыОперации</content>
+  <content>AccumulationRegister.ТНБ_Остатки</content>
+  <content>AccumulationRegister.ТНБ_СебестоимостьВалюты</content>
+  <content>Enum.ТНБ_СтатусыТорговыхОпераций</content>
+  <content>Document.ТНБ_ДвиженияВалюты</content>
+  <content>Enum.ТНБ_ВидыОперацийДвиженийВалют</content>
+  <subsystems>Документы</subsystems>
+</mdclass:Subsystem>

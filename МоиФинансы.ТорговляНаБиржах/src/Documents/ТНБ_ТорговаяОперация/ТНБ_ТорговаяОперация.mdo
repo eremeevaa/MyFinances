@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d9fbe4b-e147-48c9-95a3-354fdd327744">
+  <producedTypes>
+    <objectType typeId="5bcbf6c1-79e3-45c0-bc54-7272b09b9747" valueTypeId="9e289402-d7f1-4cac-be20-3629190a62e2"/>
+    <refType typeId="39130a69-5196-4944-8dd6-efd7d458bb11" valueTypeId="becafa83-5a05-424e-91b0-4ba3d56499c0"/>
+    <selectionType typeId="947a741e-015e-40af-8009-57eedfe8dee4" valueTypeId="674a5123-42ed-4d6b-a1a7-66e0babceffc"/>
+    <listType typeId="d5513770-eb3d-4813-8320-d4e065197ad6" valueTypeId="713512d8-d3b8-4073-9b64-c8a6a5af5bfc"/>
+    <managerType typeId="9d69a62a-b4d7-4897-b488-22dc2a4279ac" valueTypeId="373261e1-afcb-49bb-b6c4-fedb44ccafa5"/>
+  </producedTypes>
+  <name>ТНБ_ТорговаяОперация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Торговая операция</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ТНБ_ТорговаяОперация.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ТНБ_ТорговаяОперация.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ТНБ_СебестоимостьВалюты</registerRecords>
+  <registerRecords>AccumulationRegister.ТНБ_Остатки</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="9f36d128-ffc5-4181-a80b-bdbf788e1a73">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТНБ_ВидыОперации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7381de2d-d2e7-43b5-9a54-0d00036affc8">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТНБ_МестаХранения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d27c113f-dce3-4e7d-9e65-c49983d20e28">
+    <name>Отправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТНБ_МестаХранения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ef3b4b51-8434-49a1-8028-0462171dbf64">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТНБ_СтатусыТорговыхОпераций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="7cdd4eb6-702a-4169-85d1-17fb8d7d115f">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="5756f3ce-64b4-4a77-acab-a320d2d3fba5">
+    <producedTypes>
+      <objectType typeId="d6301dfe-e5db-43a9-be5a-15cdf18b8ec0" valueTypeId="fb3c29f2-1ccd-4271-9628-4590bbbb692d"/>
+      <rowType typeId="ab419a60-6e21-4cba-8a42-94592b3d4c7f" valueTypeId="105e7c9d-9f0f-4266-9d75-3662dd6cdaa0"/>
+    </producedTypes>
+    <name>Операции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операции</value>
+    </synonym>
+    <attributes uuid="486621ad-5242-4950-a453-59535ea13c1b">
+      <name>ВалютаСписания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта списания</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2822c210-6a7d-4ef0-acc5-4179751c824a">
+      <name>КоличествоСписания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество списания</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ТНБ_Валюта</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7cde98be-bbbc-4425-8510-022404404c1f">
+      <name>Курс</name>
+      <synonym>
+        <key>ru</key>
+        <value>Курс</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ТНБ_Валюта</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f9eff30f-95e1-4195-9f82-86770e6004fc">
+      <name>Комиссия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комиссия</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ТНБ_Валюта</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3020c7d2-a3ed-473c-8340-2e461539ab91">
+      <name>ВалютаПоступления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта поступления</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="204f287a-a72f-45b4-aae4-11724b56c547">
+      <name>КоличествоПоступления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество поступления</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ТНБ_Валюта</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="322b2866-6b65-4aaf-b7a5-ae5de8ff005e">
+  <producedTypes>
+    <managerType typeId="9f2c3e42-0a9b-4bf3-adde-30d158e8c956" valueTypeId="37d0eb0e-6d92-47c4-b9df-46d9c5fc2e6b"/>
+    <valueManagerType typeId="14d172d8-73ae-4a44-9df3-1ac445bb162e" valueTypeId="8535ce3b-4f53-4d6a-a9e5-047124dd0c68"/>
+    <valueKeyType typeId="e669ac07-34ab-494a-9397-67aca518e3be" valueTypeId="84df8fc9-989f-403c-8249-780663d3900d"/>
+  </producedTypes>
+  <name>ТНБ_ОсновнаяВалюта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основная валюта</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Валюты</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
